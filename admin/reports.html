@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#973939">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Reports | Admin Panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-container"></div>
+
+    <!-- Content Wrapper for Transitions -->
+    <div class="content-wrapper">
+    <!-- Hero Banner with Profile Overlay -->
+    <div class="hero-banner hero-banner-compact">
+        <div class="hero-background">
+        <img src="../assets/img/study_center.jpg" alt="University Banner" class="hero-image" />
+        <div class="hero-overlay"></div>
+        </div>
+        <div class="profile-overlay-container hidden">
+        <div class="profile-overlay">
+            <img src="../assets/img/default-profile.png" alt="Profile Picture" class="profile-picture" id="profilePicture" />
+        </div>
+        </div>
+    </div>
+
+    <!-- Profile Information Section (collapsed on this page) -->
+    <div class="profile-info-section collapsed">
+        <div class="container">
+            <div class="profile-id">2401117078</div>
+            <div class="profile-email">2401117078@student.buksu.edu.ph</div>
+            <div class="profile-name">YBANEZ ALISTAIR M.</div>
+            <div class="profile-degree">Bachelor of Science in Information Technology</div>
+            <div class="profile-major">major in Software Engineering</div>
+        </div>
+    </div>
+
+    <!-- Navigation will be loaded here -->
+    <div id="navigation-container" class="nav-compact"></div>
+
+    <!-- Main Content -->
+    <main class="admin-main py-4">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header mb-4">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h1 class="page-title mb-1">Reports</h1>
+                        <p class="page-subtitle mb-0">Track and manage all incident reports and submissions.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="header-date-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <span>847 Total Reports</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Stat Cards -->
+            <div class="row g-3 mb-4">
+                <!-- Total Reports -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Total Reports</span>
+                                <div class="dash-stat-value">847</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+8.2% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-rpt-total">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-rpt-total"></div>
+                    </div>
+                </div>
+                <!-- Resolved -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Resolved</span>
+                                <div class="dash-stat-value">623</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+12% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-rpt-resolved">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-rpt-resolved"></div>
+                    </div>
+                </div>
+                <!-- In Progress -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">In Progress</span>
+                                <div class="dash-stat-value">156</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+3.5% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-rpt-progress">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-rpt-progress"></div>
+                    </div>
+                </div>
+                <!-- Pending -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Pending</span>
+                                <div class="dash-stat-value">68</div>
+                                <div class="dash-stat-trend trend-down">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+                                    <span>-5.1% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-rpt-pending">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-rpt-pending"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports Table -->
+            <div class="card dash-card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                        <h5 class="card-title mb-0">Incident Reports</h5>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <div class="dash-table-filter">
+                                <select class="form-select form-select-sm dash-filter-select">
+                                    <option selected>All Status</option>
+                                    <option>Resolved</option>
+                                    <option>In Progress</option>
+                                    <option>Pending</option>
+                                    <option>Under Review</option>
+                                </select>
+                            </div>
+                            <div class="dash-table-filter">
+                                <select class="form-select form-select-sm dash-filter-select">
+                                    <option selected>All Priority</option>
+                                    <option>Critical</option>
+                                    <option>High</option>
+                                    <option>Medium</option>
+                                    <option>Low</option>
+                                </select>
+                            </div>
+                            <div class="dash-table-filter">
+                                <select class="form-select form-select-sm dash-filter-select">
+                                    <option selected>Last 30 Days</option>
+                                    <option>Last 7 Days</option>
+                                    <option>Last 90 Days</option>
+                                    <option>Custom Range</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover dash-table align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Incident Type</th>
+                                    <th>Location</th>
+                                    <th>Date Submitted</th>
+                                    <th>Status</th>
+                                    <th class="text-end">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1024</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-pink">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">System Error</div>
+                                                <div class="dash-activity-desc">Critical server crash</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Server Room A</td>
+                                    <td>
+                                        <div class="dash-date">Jan 15, 2024</div>
+                                        <div class="dash-time">10:30 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-review">Under Review</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1023</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-blue">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">User Access Issue</div>
+                                                <div class="dash-activity-desc">Permission denied errors</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Building 2</td>
+                                    <td>
+                                        <div class="dash-date">Jan 14, 2024</div>
+                                        <div class="dash-time">2:15 PM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Resolved</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1022</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-orange">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Network Outage</div>
+                                                <div class="dash-activity-desc">Complete network failure</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Floor 3</td>
+                                    <td>
+                                        <div class="dash-date">Jan 14, 2024</div>
+                                        <div class="dash-time">9:02 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-pending">In Progress</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-critical">Critical</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1021</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-green">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Hardware Failure</div>
+                                                <div class="dash-activity-desc">Monitor not responding</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Workstation 45</td>
+                                    <td>
+                                        <div class="dash-date">Jan 13, 2024</div>
+                                        <div class="dash-time">4:48 PM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-pending">Pending</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1020</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-purple">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Security Alert</div>
+                                                <div class="dash-activity-desc">Unauthorized access attempt</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Main Entrance</td>
+                                    <td>
+                                        <div class="dash-date">Jan 13, 2024</div>
+                                        <div class="dash-time">11:20 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Resolved</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1019</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-blue">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Software Bug</div>
+                                                <div class="dash-activity-desc">Application crash on submit</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Development Lab</td>
+                                    <td>
+                                        <div class="dash-date">Jan 12, 2024</div>
+                                        <div class="dash-time">3:30 PM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-review">Under Review</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">RPT-1018</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-green">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Data Backup Issue</div>
+                                                <div class="dash-activity-desc">Backup failed at 2 AM</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Cloud Storage</td>
+                                    <td>
+                                        <div class="dash-date">Jan 12, 2024</div>
+                                        <div class="dash-time">8:15 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Resolved</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="dash-table-info">Showing 7 of 847 reports</span>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="dash-view-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Export PDF
+                            </a>
+                            <a href="#" class="dash-view-all">
+                                View All Reports
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report Resolution Progress + Recent Summary -->
+            <div class="row g-3 mb-4">
+                <!-- Resolution Progress -->
+                <div class="col-lg-6">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">Resolution Progress</h5>
+                                <span class="dash-status-live">
+                                    <span class="live-dot"></span> Live
+                                </span>
+                            </div>
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-success"></span>
+                                        <span class="dash-progress-label">Resolved Reports</span>
+                                    </div>
+                                    <span class="dash-progress-value">73.6%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 73.6%" aria-valuenow="73.6" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-primary"></span>
+                                        <span class="dash-progress-label">In Progress</span>
+                                    </div>
+                                    <span class="dash-progress-value">18.4%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 18.4%" aria-valuenow="18.4" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-warning"></span>
+                                        <span class="dash-progress-label">Pending Review</span>
+                                    </div>
+                                    <span class="dash-progress-value">8.0%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="progress dash-progress-stacked" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 73.6%"></div>
+                                    <div class="progress-bar bg-primary" style="width: 18.4%"></div>
+                                    <div class="progress-bar bg-warning" style="width: 8%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reports by Category -->
+                <div class="col-lg-6">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">Reports by Category</h5>
+                                <span class="dash-badge-total">847 total</span>
+                            </div>
+                            <div class="dash-breakdown-list">
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-primary-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">System Errors</div>
+                                            <div class="dash-breakdown-sub">Server & application issues</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-primary">312</div>
+                                        <div class="dash-breakdown-pct">36.8%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-warning-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Security Alerts</div>
+                                            <div class="dash-breakdown-sub">Access & threat reports</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-warning">198</div>
+                                        <div class="dash-breakdown-pct">23.4%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-success-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#198754" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Network Issues</div>
+                                            <div class="dash-breakdown-sub">Connectivity & outage</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-success">215</div>
+                                        <div class="dash-breakdown-pct">25.4%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-secondary-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Hardware Failures</div>
+                                            <div class="dash-breakdown-sub">Equipment & device issues</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value" style="color: #6c757d;">122</div>
+                                        <div class="dash-breakdown-pct">14.4%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

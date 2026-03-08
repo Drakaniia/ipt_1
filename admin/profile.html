@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#973939">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Profile | Admin Panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-container"></div>
+
+    <!-- Content Wrapper for Transitions -->
+    <div class="content-wrapper">
+    <!-- Hero Banner with Profile Overlay -->
+    <div class="hero-banner">
+        <div class="hero-background">
+        <img src="../assets/img/study_center.jpg" alt="University Banner" class="hero-image" />
+        <div class="hero-overlay"></div>
+        </div>
+        <div class="profile-overlay-container">
+        <div class="profile-overlay">
+            <img src="../assets/img/default-profile.png" alt="Profile Picture" class="profile-picture" id="profilePicture" />
+        </div>
+        </div>
+    </div>
+
+    <!-- Profile Information Section -->
+    <div class="profile-info-section">
+        <div class="container">
+            <div class="profile-id">2401117078</div>
+            <div class="profile-email">2401117078@student.buksu.edu.ph</div>
+            <div class="profile-name">YBANEZ ALISTAIR M.</div>
+            <div class="profile-degree">Bachelor of Science in Information Technology</div>
+            <div class="profile-major">major in Software Engineering</div>
+        </div>
+    </div>
+
+    <!-- Navigation will be loaded here -->
+    <div id="navigation-container"></div>
+
+    <!-- Main Content -->
+    <main class="admin-main py-4">
+        <div class="container">
+            <!-- Page Title -->
+            <div class="page-header mb-4">
+                <h1 class="page-title">Profile</h1>
+            </div>
+
+            <div class="row g-4">
+                <!-- Profile Card -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="profile-card-image mb-3">
+                                <img src="../assets/img/default-profile.png" alt="Profile Picture" class="profile-card-img" id="profilePicture" />
+                            </div>
+                            <h4 class="mb-1">Admin User</h4>
+                            <p class="text-muted mb-3">Administrator</p>
+                            <div class="d-flex flex-column gap-2">
+                                <a href="mailto:admin@buksu.edu.ph" class="btn btn-outline-primary btn-sm">
+                                    <img src="../assets/img/icon-mail.svg" alt="Email" class="me-2" width="16" />
+                                    admin@buksu.edu.ph
+                                </a>
+                                <button class="btn btn-outline-secondary btn-sm">
+                                    <img src="../assets/img/icon-user.svg" alt="User" class="me-2" width="16" />
+                                    Edit Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h6 class="card-title mb-3">Account Stats</h6>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Member Since</span>
+                                <span class="fw-semibold">Jan 2024</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Last Login</span>
+                                <span class="fw-semibold">Feb 22, 2026</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">Role</span>
+                                <span class="badge bg-primary">Admin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Form -->
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Personal Information</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">First Name</label>
+                                        <input type="text" class="form-control" value="Admin" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Last Name</label>
+                                        <input type="text" class="form-control" value="User" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Email Address</label>
+                                        <input type="email" class="form-control" value="admin@buksu.edu.ph" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Phone Number</label>
+                                        <input type="tel" class="form-control" value="+63 912 345 6789" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Department</label>
+                                        <input type="text" class="form-control" value="Information Technology" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Position</label>
+                                        <input type="text" class="form-control" value="Administrator" readonly />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label text-muted small">Address</label>
+                                        <input type="text" class="form-control" value="Bislig City, Surigao del Sur" readonly />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Account Settings</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Username</label>
+                                        <input type="text" class="form-control" value="admin" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">User ID</label>
+                                        <input type="text" class="form-control" value="2024-ADMIN-001" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Account Type</label>
+                                        <input type="text" class="form-control" value="Super Admin" readonly />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label text-muted small">Status</label>
+                                        <input type="text" class="form-control" value="Active" readonly />
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <button type="button" class="btn btn-primary">Edit Settings</button>
+                                    <button type="button" class="btn btn-outline-danger ms-2">Change Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

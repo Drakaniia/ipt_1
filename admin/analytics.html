@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#973939">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Analytics | Admin Panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-container"></div>
+
+    <!-- Content Wrapper for Transitions -->
+    <div class="content-wrapper">
+    <!-- Hero Banner with Profile Overlay -->
+    <div class="hero-banner hero-banner-compact">
+        <div class="hero-background">
+        <img src="../assets/img/study_center.jpg" alt="University Banner" class="hero-image" />
+        <div class="hero-overlay"></div>
+        </div>
+        <div class="profile-overlay-container hidden">
+        <div class="profile-overlay">
+            <img src="../assets/img/default-profile.png" alt="Profile Picture" class="profile-picture" id="profilePicture" />
+        </div>
+        </div>
+    </div>
+
+    <!-- Profile Information Section (collapsed on this page) -->
+    <div class="profile-info-section collapsed">
+        <div class="container">
+            <div class="profile-id">2401117078</div>
+            <div class="profile-email">2401117078@student.buksu.edu.ph</div>
+            <div class="profile-name">YBANEZ ALISTAIR M.</div>
+            <div class="profile-degree">Bachelor of Science in Information Technology</div>
+            <div class="profile-major">major in Software Engineering</div>
+        </div>
+    </div>
+
+    <!-- Navigation will be loaded here -->
+    <div id="navigation-container" class="nav-compact"></div>
+
+    <!-- Main Content -->
+    <main class="admin-main py-4">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header mb-4"> 
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h1 class="page-title mb-1">Analytics</h1>
+                        <p class="page-subtitle mb-0">Insights and performance metrics at a glance.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="header-date-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            <span>Last 30 Days</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Stat Cards -->
+            <div class="row g-3 mb-4">
+                <!-- Total Page Views -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Total Page Views</span>
+                                <div class="dash-stat-value">45,892</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+15% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-views">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-views"></div>
+                    </div>
+                </div>
+                <!-- Avg. Session Duration -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Avg. Session</span>
+                                <div class="dash-stat-value">8m 32s</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+5% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-duration">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-duration"></div>
+                    </div>
+                </div>
+                <!-- Bounce Rate -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Bounce Rate</span>
+                                <div class="dash-stat-value">32.4%</div>
+                                <div class="dash-stat-trend trend-down">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+                                    <span>-8% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-bounce">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-bounce"></div>
+                    </div>
+                </div>
+                <!-- Conversion Rate -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Conversion Rate</span>
+                                <div class="dash-stat-value">12.8%</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+3% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-conversion">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-conversion"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Section: Bar Chart + Pie Chart -->
+            <div class="row g-3 mb-4">
+                <!-- Histogram - Monthly User Activity -->
+                <div class="col-lg-8">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-end mb-4">
+                                <h5 class="card-title mb-0">Monthly User Activity Distribution</h5>
+                                <span class="header-date-badge" style="font-size:12px; padding:4px 10px;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                                    Histogram
+                                </span>
+                            </div>
+                            <div class="analytics-chart-area">
+                                <div class="analytics-histogram-chart">
+                                    <div class="analytics-bar-y-axis">
+                                        <span>1000</span>
+                                        <span>750</span>
+                                        <span>500</span>
+                                        <span>250</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div class="analytics-histogram-grid">
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 58%;" data-value="580">
+                                                <span class="analytics-bar-tooltip">580</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Jan</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 72%;" data-value="720">
+                                                <span class="analytics-bar-tooltip">720</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Feb</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 45%;" data-value="450">
+                                                <span class="analytics-bar-tooltip">450</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Mar</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 88%;" data-value="880">
+                                                <span class="analytics-bar-tooltip">880</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Apr</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 65%;" data-value="650">
+                                                <span class="analytics-bar-tooltip">650</span>
+                                            </div>
+                                            <span class="analytics-bar-label">May</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar analytics-histogram-highlight" style="height: 95%;" data-value="950">
+                                                <span class="analytics-bar-tooltip">950</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Jun</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 78%;" data-value="780">
+                                                <span class="analytics-bar-tooltip">780</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Jul</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 82%;" data-value="820">
+                                                <span class="analytics-bar-tooltip">820</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Aug</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 70%;" data-value="700">
+                                                <span class="analytics-bar-tooltip">700</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Sep</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 60%;" data-value="600">
+                                                <span class="analytics-bar-tooltip">600</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Oct</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 55%;" data-value="550">
+                                                <span class="analytics-bar-tooltip">550</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Nov</span>
+                                        </div>
+                                        <div class="analytics-histogram-col">
+                                            <div class="analytics-histogram-bar" style="height: 85%;" data-value="850">
+                                                <span class="analytics-bar-tooltip">850</span>
+                                            </div>
+                                            <span class="analytics-bar-label">Dec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pie Chart - Report Status Distribution -->
+                <div class="col-lg-4">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">Report Status</h5>
+                                <span class="header-date-badge" style="font-size:12px; padding:4px 10px;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                                    Pie Chart
+                                </span>
+                            </div>
+                            <div class="analytics-pie-wrapper">
+                                <div class="analytics-pie-chart">
+                                    <div class="analytics-pie-ring" style="background: conic-gradient(
+                                        #198754 0deg 162deg,
+                                        #0d6efd 162deg 270deg,
+                                        #ffc107 270deg 324deg,
+                                        #dc3545 324deg 360deg
+                                    );">
+                                        <div class="analytics-pie-center">
+                                            <span class="analytics-pie-total">847</span>
+                                            <span class="analytics-pie-total-label">Total</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analytics-pie-legend">
+                                    <div class="analytics-legend-item">
+                                        <span class="analytics-legend-dot" style="background:#198754;"></span>
+                                        <div class="analytics-legend-info">
+                                            <span class="analytics-legend-label">Resolved</span>
+                                            <span class="analytics-legend-value">45%</span>
+                                        </div>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="analytics-legend-dot" style="background:#0d6efd;"></span>
+                                        <div class="analytics-legend-info">
+                                            <span class="analytics-legend-label">In Progress</span>
+                                            <span class="analytics-legend-value">30%</span>
+                                        </div>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="analytics-legend-dot" style="background:#ffc107;"></span>
+                                        <div class="analytics-legend-info">
+                                            <span class="analytics-legend-label">Pending</span>
+                                            <span class="analytics-legend-value">15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="analytics-legend-item">
+                                        <span class="analytics-legend-dot" style="background:#dc3545;"></span>
+                                        <div class="analytics-legend-info">
+                                            <span class="analytics-legend-label">Under Review</span>
+                                            <span class="analytics-legend-value">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Indicators + System Performance -->
+            <div class="row g-3 mb-4">
+                <!-- Performance Metrics -->
+                <div class="col-lg-6">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">Performance Metrics</h5>
+                                <span class="dash-status-live">
+                                    <span class="live-dot"></span> Live
+                                </span>
+                            </div>
+                            <!-- User Engagement -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-primary"></span>
+                                        <span class="dash-progress-label">User Engagement</span>
+                                    </div>
+                                    <span class="dash-progress-value">78%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- Report Resolution Rate -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-success"></span>
+                                        <span class="dash-progress-label">Report Resolution Rate</span>
+                                    </div>
+                                    <span class="dash-progress-value">85%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- System Uptime -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-info"></span>
+                                        <span class="dash-progress-label">System Uptime</span>
+                                    </div>
+                                    <span class="dash-progress-value">99.2%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 99.2%" aria-valuenow="99.2" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- Customer Satisfaction -->
+                            <div class="dash-progress-item mb-0">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-warning"></span>
+                                        <span class="dash-progress-label">Customer Satisfaction</span>
+                                    </div>
+                                    <span class="dash-progress-value">4.5 / 5</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-1">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="1"><defs><linearGradient id="star-half-grad"><stop offset="50%" stop-color="#ffc107"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#star-half-grad)"/></svg>
+                                    <span class="ms-2" style="font-size:13px; font-weight:600; color:var(--text-secondary);">4.5 stars</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Line Chart - System Performance Over Time -->
+                <div class="col-lg-6">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">System Performance Over Time</h5>
+                                <span class="header-date-badge" style="font-size:12px; padding:4px 10px;">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                                    Line Chart
+                                </span>
+                            </div>
+                            <div class="analytics-line-chart-area">
+                                <div class="analytics-line-y-axis">
+                                    <span>100%</span>
+                                    <span>75%</span>
+                                    <span>50%</span>
+                                    <span>25%</span>
+                                    <span>0%</span>
+                                </div>
+                                <div class="analytics-line-grid">
+                                    <svg class="analytics-line-svg" viewBox="0 0 500 200" preserveAspectRatio="none">
+                                        <defs>
+                                            <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="rgba(13,110,253,0.25)"/>
+                                                <stop offset="100%" stop-color="rgba(13,110,253,0)"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <polygon points="0,40 83,30 167,55 250,20 333,45 417,15 500,25 500,200 0,200" fill="url(#lineGrad)"/>
+                                        <polyline points="0,40 83,30 167,55 250,20 333,45 417,15 500,25" fill="none" stroke="#0d6efd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="0" cy="40" r="4" fill="#0d6efd"/>
+                                        <circle cx="83" cy="30" r="4" fill="#0d6efd"/>
+                                        <circle cx="167" cy="55" r="4" fill="#0d6efd"/>
+                                        <circle cx="250" cy="20" r="4" fill="#0d6efd"/>
+                                        <circle cx="333" cy="45" r="4" fill="#0d6efd"/>
+                                        <circle cx="417" cy="15" r="4" fill="#0d6efd"/>
+                                        <circle cx="500" cy="25" r="4" fill="#0d6efd"/>
+                                    </svg>
+                                    <div class="analytics-line-labels">
+                                        <span>Jan</span>
+                                        <span>Feb</span>
+                                        <span>Mar</span>
+                                        <span>Apr</span>
+                                        <span>May</span>
+                                        <span>Jun</span>
+                                        <span>Jul</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top User Activities Table -->
+            <div class="card dash-card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                        <h5 class="card-title mb-0">Top User Activities</h5>
+                        <div class="d-flex gap-2">
+                            <div class="dash-table-filter">
+                                <select class="form-select form-select-sm dash-filter-select">
+                                    <option selected>This Month</option>
+                                    <option>Last 7 Days</option>
+                                    <option>Last 30 Days</option>
+                                    <option>Last 90 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover dash-table align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Activity</th>
+                                    <th>Count</th>
+                                    <th>Distribution</th>
+                                    <th class="text-end">Trend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-blue">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Login Sessions</div>
+                                                <div class="dash-activity-desc">User authentication events</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="fw-semibold">8,542</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="progress dash-progress" style="width: 120px;">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                                            </div>
+                                            <span class="small text-muted">85%</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="dash-stat-trend trend-up" style="font-size:13px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> +12%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-green">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Profile Views</div>
+                                                <div class="dash-activity-desc">Student profile page visits</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="fw-semibold">6,234</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="progress dash-progress" style="width: 120px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 62%"></div>
+                                            </div>
+                                            <span class="small text-muted">62%</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="dash-stat-trend trend-up" style="font-size:13px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> +8%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-purple">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Report Submissions</div>
+                                                <div class="dash-activity-desc">Incident report filings</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="fw-semibold">3,891</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="progress dash-progress" style="width: 120px;">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 39%"></div>
+                                            </div>
+                                            <span class="small text-muted">39%</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="dash-stat-trend trend-down" style="font-size:13px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg> -5%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-pink">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Document Downloads</div>
+                                                <div class="dash-activity-desc">Files and form downloads</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="fw-semibold">2,567</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="progress dash-progress" style="width: 120px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 26%"></div>
+                                            </div>
+                                            <span class="small text-muted">26%</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span class="dash-stat-trend trend-up" style="font-size:13px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg> +3%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-orange">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                                            </div>
+                                            <div>
+                                                <div class="dash-activity-label">Settings Changes</div>
+                                                <div class="dash-activity-desc">Account preference updates</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="fw-semibold">1,234</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="progress dash-progress" style="width: 120px;">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 12%"></div>
+                                            </div>
+                                            <span class="small text-muted">12%</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end"><span style="font-size:13px; font-weight:500; color:var(--text-secondary);">→ 0%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="dash-table-info">Showing top 5 activities</span>
+                        <a href="reports.html" class="dash-view-all">
+                            View All Reports
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

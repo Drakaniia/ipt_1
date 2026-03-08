@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#973939">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Dashboard | Admin Panel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-container"></div>
+
+    <!-- Content Wrapper for Transitions -->
+    <div class="content-wrapper">
+    <!-- Hero Banner with Profile Overlay -->
+    <div class="hero-banner">
+        <div class="hero-background">
+        <img src="../assets/img/study_center.jpg" alt="University Banner" class="hero-image" />
+        <div class="hero-overlay"></div>
+        </div>
+        <div class="profile-overlay-container">
+        <div class="profile-overlay">
+            <img src="../assets/img/default-profile.png" alt="Profile Picture" class="profile-picture" id="profilePicture" />
+        </div>
+        </div>
+    </div>
+
+    <!-- Profile Information Section -->
+    <div class="profile-info-section">
+        <div class="container">
+            <div class="profile-id">2401117078</div>
+            <div class="profile-email">2401117078@student.buksu.edu.ph</div>
+            <div class="profile-name">YBANEZ ALISTAIR M.</div>
+            <div class="profile-degree">Bachelor of Science in Information Technology</div>
+            <div class="profile-major">major in Software Engineering</div>
+        </div>
+    </div>
+
+    <!-- Navigation will be loaded here -->
+    <div id="navigation-container"></div>
+
+    <!-- Main Content -->
+    <main class="admin-main py-4">
+        <div class="container">
+            <!-- Page Header with Greeting -->
+            <div class="page-header mb-4">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h1 class="page-title mb-1">Dashboard</h1>
+                        <p class="page-subtitle mb-0">Welcome back! Here's what's happening today.</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="header-date-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            <span id="currentDate">March 4, 2026</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stat Cards Row -->
+            <div class="row g-3 mb-4">
+                <!-- Total Users -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Total Users</span>
+                                <div class="dash-stat-value">1,250</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+12.5% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-users">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-users"></div>
+                    </div>
+                </div>
+                <!-- Total Reports -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Total Reports</span>
+                                <div class="dash-stat-value">847</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+8.2% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-reports">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-reports"></div>
+                    </div>
+                </div>
+                <!-- Alerts -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Alerts</span>
+                                <div class="dash-stat-value">23</div>
+                                <div class="dash-stat-trend trend-down">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+                                    <span>-3.1% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-alerts">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-alerts"></div>
+                    </div>
+                </div>
+                <!-- Active Sessions -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="dash-stat-card">
+                        <div class="dash-stat-card-body">
+                            <div class="dash-stat-info">
+                                <span class="dash-stat-label">Active Sessions</span>
+                                <div class="dash-stat-value">384</div>
+                                <div class="dash-stat-trend trend-up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                                    <span>+5.7% this month</span>
+                                </div>
+                            </div>
+                            <div class="dash-stat-icon icon-sessions">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                        </div>
+                        <div class="dash-stat-bar bar-sessions"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Row: System Status + User Breakdown -->
+            <div class="row g-3 mb-4">
+                <!-- System Status -->
+                <div class="col-lg-7">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">System Status</h5>
+                                <span class="dash-status-live">
+                                    <span class="live-dot"></span> Live
+                                </span>
+                            </div>
+                            <!-- Server Uptime -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-success"></span>
+                                        <span class="dash-progress-label">Server Uptime</span>
+                                    </div>
+                                    <span class="dash-progress-value">99.9%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 99.9%" aria-valuenow="99.9" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- Database Performance -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-primary"></span>
+                                        <span class="dash-progress-label">Database Performance</span>
+                                    </div>
+                                    <span class="dash-progress-value">95%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- Storage Usage -->
+                            <div class="dash-progress-item">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-warning"></span>
+                                        <span class="dash-progress-label">Storage Usage</span>
+                                    </div>
+                                    <span class="dash-progress-value">67%</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- API Response Time -->
+                            <div class="dash-progress-item mb-0">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="dash-progress-dot bg-info"></span>
+                                        <span class="dash-progress-label">API Response Time</span>
+                                    </div>
+                                    <span class="dash-progress-value">125ms</span>
+                                </div>
+                                <div class="progress dash-progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User Breakdown -->
+                <div class="col-lg-5">
+                    <div class="card dash-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="card-title mb-0">User Breakdown</h5>
+                                <span class="dash-badge-total">1,250 total</span>
+                            </div>
+                            <div class="dash-breakdown-list">
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-success-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#198754" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Active Users</div>
+                                            <div class="dash-breakdown-sub">Currently online</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-success">892</div>
+                                        <div class="dash-breakdown-pct">71.4%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-primary-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">New This Week</div>
+                                            <div class="dash-breakdown-sub">Recently registered</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-primary">156</div>
+                                        <div class="dash-breakdown-pct">12.5%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-secondary-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Inactive</div>
+                                            <div class="dash-breakdown-sub">No activity in 30 days</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value" style="color: #6c757d;">190</div>
+                                        <div class="dash-breakdown-pct">15.2%</div>
+                                    </div>
+                                </div>
+                                <div class="dash-breakdown-item">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="dash-breakdown-icon bg-warning-subtle">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                        </div>
+                                        <div>
+                                            <div class="dash-breakdown-label">Suspended</div>
+                                            <div class="dash-breakdown-sub">Requires attention</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <div class="dash-breakdown-value text-warning">12</div>
+                                        <div class="dash-breakdown-pct">0.9%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Stacked progress bar summary -->
+                            <div class="mt-3">
+                                <div class="progress dash-progress-stacked" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 71.4%"></div>
+                                    <div class="progress-bar bg-primary" style="width: 12.5%"></div>
+                                    <div class="progress-bar bg-secondary" style="width: 15.2%"></div>
+                                    <div class="progress-bar bg-warning" style="width: 0.9%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity Table -->
+            <div class="card dash-card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+                        <h5 class="card-title mb-0">Recent Activity</h5>
+                        <div class="d-flex gap-2">
+                            <div class="dash-table-filter">
+                                <select class="form-select form-select-sm dash-filter-select">
+                                    <option selected>All Activity</option>
+                                    <option>Enrollment</option>
+                                    <option>Grades</option>
+                                    <option>Profile</option>
+                                    <option>Documents</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover dash-table align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Activity</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th class="text-end">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="dash-id">#1001</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-blue">JD</div>
+                                            <div>
+                                                <div class="dash-user-name">John Doe</div>
+                                                <div class="dash-user-email">john.doe@student.buksu.edu.ph</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-activity-label">Enrollment Submitted</div>
+                                        <div class="dash-activity-desc">BSc Information Technology - 2nd Sem</div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-date">Feb 20, 2026</div>
+                                        <div class="dash-time">10:34 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Completed</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">#1002</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-green">JS</div>
+                                            <div>
+                                                <div class="dash-user-name">Jane Smith</div>
+                                                <div class="dash-user-email">jane.smith@student.buksu.edu.ph</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-activity-label">Grade Update</div>
+                                        <div class="dash-activity-desc">IPT 101 - Final Grade Submitted</div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-date">Feb 19, 2026</div>
+                                        <div class="dash-time">2:15 PM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Completed</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">#1003</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-purple">MJ</div>
+                                            <div>
+                                                <div class="dash-user-name">Mike Johnson</div>
+                                                <div class="dash-user-email">mike.j@student.buksu.edu.ph</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-activity-label">Profile Updated</div>
+                                        <div class="dash-activity-desc">Contact information changed</div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-date">Feb 18, 2026</div>
+                                        <div class="dash-time">9:02 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-pending">Pending</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">#1004</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-pink">SW</div>
+                                            <div>
+                                                <div class="dash-user-name">Sarah Wilson</div>
+                                                <div class="dash-user-email">sarah.w@student.buksu.edu.ph</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-activity-label">Course Registration</div>
+                                        <div class="dash-activity-desc">Added 3 courses for 2nd Semester</div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-date">Feb 17, 2026</div>
+                                        <div class="dash-time">4:48 PM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-completed">Completed</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dash-id">#1005</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="dash-avatar dash-avatar-orange">CB</div>
+                                            <div>
+                                                <div class="dash-user-name">Chris Brown</div>
+                                                <div class="dash-user-email">chris.b@student.buksu.edu.ph</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-activity-label">Document Upload</div>
+                                        <div class="dash-activity-desc">TOR and Certificate of Good Moral</div>
+                                    </td>
+                                    <td>
+                                        <div class="dash-date">Feb 16, 2026</div>
+                                        <div class="dash-time">11:20 AM</div>
+                                    </td>
+                                    <td><span class="dash-badge badge-review">Review</span></td>
+                                    <td class="text-end"><span class="dash-priority priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table footer with pagination hint -->
+                    <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                        <span class="dash-table-info">Showing 5 of 847 entries</span>
+                        <a href="reports.html" class="dash-view-all">
+                            View All Activity
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
